@@ -42,3 +42,25 @@ C<EXE_FILES: >
 
 =back
 
+=head2 Thu Sep 27 08:09:28 2012: C<Module> L<Collectd|Collectd>
+
+=over 4
+
+=item *
+
+C<installed into: /opt/collectd-giraffi/lib/perl5/site_perl/5.14.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: >
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
