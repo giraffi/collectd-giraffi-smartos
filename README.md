@@ -6,7 +6,7 @@ Setup
 
 ### clone from repository
 <pre><code>git clone https://github.com/giraffi/collectd-giraffi-smartos.git /opt/collectd-giraffi -b master --depth=0
-cp /opt/collectd-giraffi/usr/lib/librabbitmq.so* /opt/local/lib/
+cp -n /opt/collectd-giraffi/usr/lib/librabbitmq.so* /opt/local/lib/
 </code></pre>
 
 ### modify config
