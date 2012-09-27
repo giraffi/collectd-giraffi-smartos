@@ -18,29 +18,7 @@ cp /opt/collectd-giraffi/etc/collectd.conf.sample /opt/collectd-giraffi/etc/coll
 Replace account informations.
 
 <pre><code>
-Interval  20
-FQDNLookup no
-ReadThreads 5
-LoadPlugin syslog
-<Plugin syslog>
-  LogLevel info
-</Plugin>
-LoadPlugin network
-LoadPlugin cpu
-LoadPlugin df
-LoadPlugin disk
-LoadPlugin load
-LoadPlugin memory
-LoadPlugin swap
-LoadPlugin users
-LoadPlugin interface
-<Plugin interface>
-  Interface "eth0"
-</Plugin>
-
-LoadPlugin amqp
-<Plugin "amqp">
- <Publish "name">
+  -- snip --
     Host "GIRAFFI_ENDPOINT"
     Port 5672
     VHost "/"
@@ -51,8 +29,7 @@ LoadPlugin amqp
     Persistent false
     StoreRates false
     Format "JSON"
-  </Publish>
-</Plugin>
+  -- snip --
 </code></pre>
 
 ### add smf manifest
