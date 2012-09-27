@@ -5,20 +5,17 @@ Setup
 ====
 
 ### clone from repository
-<pre><code>
-git clone https://github.com/giraffi/collectd-giraffi-smartos.git /opt/collectd-giraffi -b master --depth=1
+<pre><code>git clone https://github.com/giraffi/collectd-giraffi-smartos.git /opt/collectd-giraffi -b master --depth=0
 cp /opt/collectd-giraffi/usr/lib/librabbitmq.so* /opt/local/lib/
 </code></pre>
 
 ### modify config
-<pre><code>
-cp /opt/collectd-giraffi/etc/collectd.conf.sample /opt/collectd-giraffi/etc/collectd.conf
+<pre><code>cp /opt/collectd-giraffi/etc/collectd.conf.sample /opt/collectd-giraffi/etc/collectd.conf
 </code></pre>
 
 Replace account informations.
 
-<pre><code>
-  -- snip --
+<pre><code>  -- snip --
     Host "GIRAFFI_ENDPOINT"
     Port 5672
     VHost "/"
@@ -33,15 +30,13 @@ Replace account informations.
 </code></pre>
 
 ### add smf manifest
-<pre><code>
-svccfg import /opt/collectd-giraffi/share/smf/colelctd-giraffi.xml 
+<pre><code>svccfg import /opt/collectd-giraffi/share/smf/colelctd-giraffi.xml 
 </code></pre>
 
 
 Start/Stop
 ====
-<pre><code>
-svcadm enable colelctd-giraffi
+<pre><code>svcadm enable colelctd-giraffi
 svcadm disable colelctd-giraffi
 </code></pre>
 
