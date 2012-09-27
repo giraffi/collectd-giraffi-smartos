@@ -1,0 +1,22 @@
+=head2 Thu Sep 27 07:30:56 2012: C<Module> L<Collectd|Collectd>
+
+=over 4
+
+=item *
+
+C<installed into: /opt/collectd-giraffi/lib/perl5/site_perl/5.14.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: >
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
