@@ -1,4 +1,5 @@
 Interval  20
+FQDNLookup no
 ReadThreads 5
 LoadPlugin syslog
 <Plugin syslog>
